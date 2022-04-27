@@ -38,7 +38,7 @@ resource "aws_instance" "web" {
   instance_type = "t2.medium"
   count         = var.num_webs
 
-  vpc_security_group_ids = [aws_security_group.default.id]
+  vpc_security_group_ids = ["sg-023c0906c2d6dd7f7"]
 
   key_name = aws_key_pair.default.id
 
